@@ -1,0 +1,1052 @@
+/* =====================================
+   GOOGLE FONT & RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+    line-height:1.6;
+
+}
+
+/* =====================================
+HEADER
+===================================== */
+
+header{
+
+    width:100%;
+    background:#111827;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+    color:#22c55e;
+
+}
+
+nav{
+
+    display:flex;
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+nav a:hover,
+nav a.active{
+
+    color:#22c55e;
+
+}
+
+/* =====================================
+HERO
+===================================== */
+
+.hero{
+
+    width:100%;
+    min-height:420px;
+
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+    color:#d1d5db;
+    margin-bottom:30px;
+
+}
+
+.hero button{
+
+    border:none;
+    background:#22c55e;
+    color:white;
+    padding:16px 35px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    background:#16a34a;
+    transform:translateY(-3px);
+
+}
+
+/* =====================================
+SECTION
+===================================== */
+
+.section{
+
+    width:90%;
+    max-width:1400px;
+    margin:60px auto;
+
+}
+
+.section-heading{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+
+}
+
+.section-heading h2{
+
+    font-size:30px;
+    color:#22c55e;
+
+}
+
+.section-heading a{
+
+    text-decoration:none;
+    color:#60a5fa;
+    font-weight:600;
+
+}
+
+.section-heading a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =====================================
+MATCH GRID
+===================================== */
+
+.match-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+
+}
+
+.match-card{
+
+    background:#1e293b;
+    padding:25px;
+    border-radius:18px;
+    transition:.3s;
+    border:1px solid #334155;
+
+}
+
+.match-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#22c55e;
+
+}
+
+.match-card h3{
+
+    text-align:center;
+    margin-bottom:10px;
+    font-size:22px;
+
+}
+
+.match-card p{
+
+    margin:8px 0;
+    color:#d1d5db;
+
+}
+
+.live-badge{
+
+    display:inline-block;
+    margin-top:15px;
+    background:#ef4444;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.upcoming-badge{
+
+    display:inline-block;
+    margin-top:15px;
+    background:#2563eb;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+/* =====================================
+LOADING
+===================================== */
+
+.loading,
+.no-match{
+
+    background:#1e293b;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    color:#cbd5e1;
+    font-size:18px;
+
+}
+/* =====================================
+COMPETITION GRID
+===================================== */
+
+.competition-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+.competition-card{
+
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+
+}
+
+.competition-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#22c55e;
+    background:#273449;
+
+}
+
+.competition-card img{
+
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-bottom:15px;
+
+}
+
+.competition-card h3{
+
+    font-size:18px;
+    color:#ffffff;
+    margin-bottom:8px;
+
+}
+
+.competition-card p{
+
+    color:#cbd5e1;
+    font-size:14px;
+
+}
+
+/* =====================================
+STANDINGS TABLE
+===================================== */
+
+.table-preview{
+
+    overflow-x:auto;
+    background:#1e293b;
+    border-radius:18px;
+    border:1px solid #334155;
+
+}
+
+.table-preview table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.table-preview thead{
+
+    background:#22c55e;
+    color:#fff;
+
+}
+
+.table-preview th,
+.table-preview td{
+
+    padding:16px;
+    text-align:left;
+    border-bottom:1px solid #334155;
+
+}
+
+.table-preview tbody tr{
+
+    transition:.3s;
+
+}
+
+.table-preview tbody tr:hover{
+
+    background:#273449;
+
+}
+
+.table-preview img{
+
+    width:28px;
+    height:28px;
+    vertical-align:middle;
+    margin-right:10px;
+
+}
+
+/* =====================================
+TEAM GRID
+===================================== */
+
+.team-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+.team-card{
+
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:18px;
+    text-align:center;
+    padding:25px;
+    transition:.3s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#22c55e;
+
+}
+
+.team-card img{
+
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+
+}
+
+.team-card h3{
+
+    font-size:18px;
+    margin-bottom:8px;
+
+}
+
+.team-card p{
+
+    color:#cbd5e1;
+    font-size:15px;
+
+}
+
+/* =====================================
+TOP SCORERS
+===================================== */
+
+.scorer-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+
+}
+
+.scorer-card{
+
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:20px;
+    transition:.3s;
+
+}
+
+.scorer-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#22c55e;
+
+}
+
+.scorer-card h3{
+
+    margin-bottom:10px;
+    color:#ffffff;
+
+}
+
+.scorer-card p{
+
+    color:#cbd5e1;
+    margin:6px 0;
+
+}
+
+/* =====================================
+LEAGUE GRID
+===================================== */
+
+.league-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+.league-card{
+
+    background:#1e293b;
+    border:1px solid #334155;
+    color:#ffffff;
+    text-decoration:none;
+    padding:20px;
+    text-align:center;
+    border-radius:18px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.league-card:hover{
+
+    background:#22c55e;
+    color:#ffffff;
+    border-color:#22c55e;
+    transform:translateY(-5px);
+
+}
+
+/* =====================================
+NEWS SECTION
+===================================== */
+
+.news-placeholder{
+
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+
+}
+
+.news-placeholder p{
+
+    color:#cbd5e1;
+    font-size:18px;
+
+}
+
+/* =====================================
+FOOTER
+===================================== */
+
+footer{
+
+    background:#111827;
+    margin-top:80px;
+    padding:50px 20px;
+    text-align:center;
+    border-top:1px solid #334155;
+
+}
+
+.footer-container h2{
+
+    color:#22c55e;
+    margin-bottom:15px;
+
+}
+
+.footer-container p{
+
+    color:#cbd5e1;
+    margin:8px 0;
+
+}
+/* =====================================
+ANIMATIONS
+===================================== */
+
+.match-card,
+.team-card,
+.competition-card,
+.scorer-card,
+.league-card{
+
+    animation:fadeInUp .6s ease;
+
+}
+
+@keyframes fadeInUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.live-badge{
+
+    animation:pulse 1.5s infinite;
+
+}
+
+/* =====================================
+BUTTONS
+===================================== */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+button:focus,
+a:focus{
+
+    outline:2px solid #22c55e;
+    outline-offset:3px;
+
+}
+
+/* =====================================
+IMAGES
+===================================== */
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+/* =====================================
+SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#22c55e;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#16a34a;
+
+}
+
+/* =====================================
+TABLETS
+===================================== */
+
+@media (max-width:992px){
+
+header{
+
+    padding:18px 5%;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.hero{
+
+    min-height:350px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.section{
+
+    width:95%;
+
+}
+
+.section-heading h2{
+
+    font-size:26px;
+
+}
+
+.match-grid,
+.team-grid,
+.competition-grid,
+.scorer-grid,
+.league-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* =====================================
+MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+header{
+
+    padding:15px;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+}
+
+nav{
+
+    gap:12px;
+
+}
+
+nav a{
+
+    font-size:14px;
+
+}
+
+.hero{
+
+    min-height:300px;
+    padding:30px 15px;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.hero button{
+
+    width:100%;
+
+}
+
+.section-heading{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+
+}
+
+.match-grid,
+.team-grid,
+.competition-grid,
+.scorer-grid,
+.league-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.table-preview{
+
+    font-size:14px;
+
+}
+
+.table-preview th,
+.table-preview td{
+
+    padding:10px;
+
+}
+
+footer{
+
+    padding:40px 15px;
+
+}
+
+}
+/* =====================================
+SMALL PHONES
+===================================== */
+
+@media (max-width:480px){
+
+.logo{
+
+    font-size:20px;
+    text-align:center;
+
+}
+
+.hero{
+
+    min-height:260px;
+    padding:20px 15px;
+
+}
+
+.hero h1{
+
+    font-size:26px;
+    line-height:1.3;
+
+}
+
+.hero p{
+
+    font-size:14px;
+
+}
+
+.hero button{
+
+    padding:14px 20px;
+    font-size:16px;
+
+}
+
+.section{
+
+    width:95%;
+    margin:40px auto;
+
+}
+
+.section-heading h2{
+
+    font-size:22px;
+
+}
+
+.match-card,
+.team-card,
+.competition-card,
+.scorer-card,
+.league-card{
+
+    padding:18px;
+
+}
+
+.table-preview{
+
+    font-size:13px;
+
+}
+
+.table-preview th,
+.table-preview td{
+
+    padding:8px;
+
+}
+
+.footer-container h2{
+
+    font-size:22px;
+
+}
+
+.footer-container p{
+
+    font-size:14px;
+
+}
+
+}
+
+/* =====================================
+LARGE DESKTOPS
+===================================== */
+
+@media (min-width:1400px){
+
+.hero-content{
+
+    max-width:1000px;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+}
+
+.section{
+
+    max-width:1500px;
+
+}
+
+.match-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.team-grid{
+
+    grid-template-columns:repeat(5,1fr);
+
+}
+
+.competition-grid{
+
+    grid-template-columns:repeat(5,1fr);
+
+}
+
+.scorer-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.league-grid{
+
+    grid-template-columns:repeat(5,1fr);
+
+}
+
+}
+
+/* =====================================
+UTILITY CLASSES
+===================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-30{
+
+    margin-top:30px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-30{
+
+    margin-bottom:30px;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* =====================================
+CARD SHADOWS
+===================================== */
+
+.match-card,
+.team-card,
+.competition-card,
+.scorer-card,
+.news-placeholder,
+.table-preview{
+
+    box-shadow:0 8px 24px rgba(0,0,0,.25);
+
+}
+
+/* =====================================
+SMOOTH TRANSITIONS
+===================================== */
+
+a,
+button,
+.match-card,
+.team-card,
+.competition-card,
+.scorer-card,
+.league-card{
+
+    transition:all .3s ease;
+
+}
+
+/* =====================================
+END OF STYLE.CSS
+===================================== */

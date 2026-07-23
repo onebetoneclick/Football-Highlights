@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Competition Details | Football Live Hub</title>
+
+    <link
+        rel="stylesheet"
+        href="competition.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header>
+
+    <div class="logo">
+
+        ⚽ Football Live Hub
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+
+            Home
+
+        </a>
+
+
+        <a href="standings.html">
+
+            Standings
+
+        </a>
+
+        <a href="teams.html">
+
+            Teams
+
+        </a>
+
+        <a href="scorers.html">
+
+            Top Scorers
+
+        </a>
+
+<a href="competitions.html" class="active">
+
+            Competitions
+
+        </a>
+
+    </nav>
+
+</header>
+
+<!-- ===========================
+COMPETITION HERO
+=========================== -->
+
+<section class="competition-hero">
+
+    <img
+        id="competitionLogo"
+        src=""
+        alt="Competition Logo"
+    >
+
+    <div>
+
+        <h1 id="competitionName">
+
+            Loading Competition...
+
+        </h1>
+
+        <p id="competitionCountry">
+
+            Please wait...
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+QUICK INFO
+=========================== -->
+
+<section class="info-section">
+
+    <div class="info-card">
+
+        <h3>🌍 Country</h3>
+
+        <p id="country">
+
+            --
+
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <h3>📅 Season</h3>
+
+        <p id="season">
+
+            --
+
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <h3>🏆 Type</h3>
+
+        <p id="type">
+
+            --
+
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <h3>⚽ Current Matchday</h3>
+
+        <p id="matchday">
+
+            --
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="action-section">
+
+    <!-- League Links -->
+
+    <a href="competition.html?id=2021" class="action-btn">🇬🇧 Premier League</a>
+    <a href="competition.html?id=2014" class="action-btn">🇪🇸 La Liga</a>
+    <a href="competition.html?id=2019" class="action-btn">🇮🇹 Serie A</a>
+    <a href="competition.html?id=2002" class="action-btn">🇩🇪 Bundesliga</a>
+    <a href="competition.html?id=2015" class="action-btn">🇫🇷 Ligue 1</a>
+    <a href="competition.html?id=2003" class="action-btn">🇳🇱 Eredivisie</a>
+    <a href="competition.html?id=2017" class="action-btn">🇵🇹 Primeira Liga</a>
+    <a href="competition.html?id=2016" class="action-btn">🏴 Championship</a>
+    <a href="competition.html?id=2013" class="action-btn">🇧🇷 Brazil Serie A</a>
+    <a href="competition.html?id=2152" class="action-btn">🏆 Copa Libertadores</a>
+    <a href="competition.html?id=2000" class="action-btn">🌍 FIFA World Cup</a>
+
+</section>
+
+<section class="action-section">
+
+    <!-- Page Navigation -->
+
+    <a id="standingsBtn" href="#" class="action-btn">📊 Standings</a>
+    <a id="teamsBtn" href="#" class="action-btn">👥 Teams</a>
+    <a id="scorersBtn" href="#" class="action-btn">🥅 Top Scorers</a>
+    <a id="fixturesBtn" href="#" class="action-btn">📅 Fixtures</a>
+
+</section>
+
+<!-- ===========================
+LATEST FIXTURES
+=========================== -->
+
+<section class="fixtures-section">
+
+    <h2>
+
+        Upcoming Fixtures
+
+    </h2>
+
+    <div id="fixturesContainer">
+
+        Loading fixtures...
+
+    </div>
+
+</section>
+<!-- ===========================
+STANDINGS PREVIEW
+=========================== -->
+
+<section class="table-section">
+
+    <div class="section-title">
+
+        <h2>📊 League Standings</h2>
+
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+                    <th>Club</th>
+                    <th>P</th>
+                    <th>GD</th>
+                    <th>Pts</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="standingsTable">
+
+                <tr>
+
+                    <td colspan="5">
+
+                        Loading standings...
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+FEATURED TEAMS
+=========================== -->
+
+<section class="teams-section">
+
+    <div class="section-title">
+
+        <h2>👥 Teams</h2>
+
+    </div>
+
+    <div id="teamsContainer" class="teams-grid">
+
+        Loading teams...
+
+    </div>
+
+</section>
+
+<!-- ===========================
+TOP SCORERS
+=========================== -->
+
+<section class="scorers-section">
+
+    <div class="section-title">
+
+        <h2>🥅 Top Scorers</h2>
+
+    </div>
+
+    <div id="scorersContainer" class="scorers-grid">
+
+        Loading top scorers...
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>⚽ Football Live Hub</h2>
+
+        <p>
+
+            Live Scores • Fixtures • Competitions • Teams • Standings • Top Scorers
+
+        </p>
+
+        <p>
+
+            Powered by Football-Data.org API
+
+        </p>
+	
+	<p>
+
+            Powered by Don Martial
+
+        </p>
+
+        <p>
+
+            © 2026 Football Live Hub. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="competition.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Football Live Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header>
+
+    <div class="logo">
+        ⚽ Football Live Hub
+    </div>
+
+    <nav>
+
+        <a href="index.html" class="active">Home</a>
+        <a href="standings.html">Standings</a>
+        <a href="teams.html">Teams</a>
+        <a href="scorers.html">Top Scorers</a>
+        <a href="competition.html">Competition</a>
+
+    </nav>
+
+</header>
+
+<!-- ===========================
+HERO
+=========================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>World Football Lives Here</h1>
+
+        <p>
+
+            Live football scores, league tables,
+            upcoming fixtures, clubs, players and
+            top scorers from the world's biggest competitions.
+
+        </p>
+
+        <button id="viewMatches">
+            View Live Matches
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+LIVE MATCHES
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>🔴 Live Matches</h2>
+
+        <a href="#">
+            View All
+        </a>
+
+    </div>
+
+    <div id="liveMatches" class="match-grid">
+
+        <div class="loading">
+
+            Loading live football...
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+UPCOMING MATCHES
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>📅 Upcoming Matches</h2>
+
+        <a href="#">
+            View All
+        </a>
+
+    </div>
+
+    <div id="upcomingMatches" class="match-grid">
+
+        <div class="loading">
+
+            Loading upcoming fixtures...
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+TOP COMPETITIONS
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>🏆 Competitions</h2>
+
+    </div>
+
+    <div id="competitionContainer" class="competition-grid">
+
+        <div class="loading">
+
+            Loading competitions...
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+LEAGUE TABLE PREVIEW
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>📊 Premier League Standings</h2>
+
+        <a href="standings.html">
+            Full Table
+        </a>
+
+    </div>
+
+    <div class="table-preview">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+                    <th>Club</th>
+                    <th>Pts</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="standingsPreview">
+
+                <tr>
+
+                    <td colspan="3">
+
+                        Loading standings...
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+<!-- ===========================
+FEATURED TEAMS
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>👥 Featured Teams</h2>
+
+        <a href="teams.html">
+            View All
+        </a>
+
+    </div>
+
+    <div id="featuredTeams" class="team-grid">
+
+        <div class="loading">
+
+            Loading teams...
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+TOP SCORERS
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>🥅 Top Scorers</h2>
+
+        <a href="scorers.html">
+
+            View All
+
+        </a>
+
+    </div>
+
+    <div id="topScorers" class="scorer-grid">
+
+        <div class="loading">
+
+            Loading top scorers...
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+BROWSE LEAGUES
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>🌍 Browse by League</h2>
+
+    </div>
+
+    <div class="league-grid">
+
+        <a href="standings.html?league=2021" class="league-card">🏴 Premier League</a>
+
+        <a href="standings.html?league=2014" class="league-card">🇪🇸 La Liga</a>
+
+        <a href="standings.html?league=2019" class="league-card">🇮🇹 Serie A</a>
+
+        <a href="standings.html?league=2002" class="league-card">🇩🇪 Bundesliga</a>
+
+        <a href="standings.html?league=2015" class="league-card">🇫🇷 Ligue 1</a>
+
+        <a href="standings.html?league=2003" class="league-card">🇳🇱 Eredivisie</a>
+
+        <a href="standings.html?league=2017" class="league-card">🇵🇹 Primeira Liga</a>
+
+        <a href="standings.html?league=2013" class="league-card">🇧🇷 Brasileiro Série A</a>
+
+        <a href="standings.html?league=2001" class="league-card">🏆 Champions League</a>
+
+        <a href="standings.html?league=2000" class="league-card">🌍 FIFA World Cup</a>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+LATEST NEWS
+=========================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <h2>📰 Football News</h2>
+
+    </div>
+
+    <div class="news-placeholder">
+
+        <p>
+
+            Football news will be added in a future update.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <h2>⚽ Football Live Hub</h2>
+
+        <p>
+
+            Live Football • Fixtures • Standings • Teams • Players • Top Scorers
+
+        </p>
+
+        <p>
+
+            Powered by Football-Data.org API
+
+        </p>
+
+        <p>
+
+            © 2026 Football Live Hub. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
